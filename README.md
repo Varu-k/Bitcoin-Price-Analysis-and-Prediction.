@@ -1,1 +1,77 @@
 # Bitcoin-Price-Analysis-and-Prediction.
+
+
+This project provides a simple workflow for downloading, analyzing, visualizing, and modeling historical Bitcoin price data using Python. It leverages the `yfinance` library to fetch data, `pandas` for data manipulation, `matplotlib` for visualization, and `scikit-learn` for machine learning.
+
+Features
+
+- Downloads historical Bitcoin (BTC-USD) data and saves it as `btc.csv`
+- Cleans and preprocesses the data
+- Visualizes Bitcoin's closing and opening prices over time
+- Splits the data into training and testing sets
+- Sets up a Random Forest Classifier for price prediction (example code provided)
+
+Project Structure
+
+- `bitcoin_working.ipyb.ipynb` &mdash; Main Jupyter notebook with all code and analysis
+- `btc.csv` &mdash; CSV file containing historical Bitcoin data
+
+ Requirements
+
+- Python 3.8+
+- Jupyter Notebook or VS Code with Jupyter extension
+
+ Python Packages
+
+- yfinance
+- pandas
+- scikit-learn
+- matplotlib
+
+Install all dependencies with:
+
+```sh
+pip install yfinance pandas scikit-learn matplotlib
+```
+
+ Usage
+
+1. **Open the notebook**  
+   Open `bitcoin_working.ipyb.ipynb` in Jupyter Notebook or VS Code.
+
+2. **Run all cells**  
+   The notebook will:
+   - Download Bitcoin price data
+   - Save it to `btc.csv`
+   - Clean and preprocess the data
+   - Plot closing and opening prices
+   - Prepare data for machine learning
+
+Model Training
+
+The notebook demonstrates how to split the data and set up a Random Forest Classifier. Example code for fitting the model is provided but commented out.
+
+## Example Visualizations
+
+- Line plot of Bitcoin closing price over time
+- Line plot of Bitcoin opening price over time
+
+Customization
+
+- You can modify the predictors and target variable in the model section to experiment with different features.
+- Additional visualizations and analyses can be added as needed.
+
+ License
+
+This project is for educational purposes.
+
+---
+
+**Author:**  
+[Mandala Dharani]
+
+---
+
+**File references:**  
+- Main notebook: `bitcoin_working.ipyb.ipynb`
+- Data file: `btc.csv`
